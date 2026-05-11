@@ -86,7 +86,7 @@ def plot_test_vs_pred(y_true, y_pred):
     plt.figure(figsize=(14, 6))
 
     plt.plot(y_true, label="Actual Test Data")
-    plt.plot(y_pred, label="XGBoost Forecast (200 steps)")
+    plt.plot(y_pred, label="Gradient Boosting Forecast (200 steps)")
 
 
     plt.title("Recursive 200-Step Forecast vs Real Values")
