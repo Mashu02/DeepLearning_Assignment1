@@ -85,11 +85,11 @@ def plot_forecast(series: np.ndarray, forecasts: np.ndarray, lookback: int):
 def plot_test_vs_pred(y_true, y_pred):
     plt.figure(figsize=(14, 6))
 
-    plt.plot(y_true, label="Actual Test Data")
-    plt.plot(y_pred, label="Gradient Boosting Forecast (200 steps)")
+    plt.plot(y_true, label="Real values")
+    plt.plot(y_pred, label="Predictions")
 
 
-    plt.title("Recursive 200-Step Forecast vs Real Values")
+    plt.title("Gradient Boosting Predictions vs Real Values")
     plt.xlabel("Time Step")
     plt.ylabel("Signal")
 
